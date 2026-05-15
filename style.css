@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #161616, #242424);
+  font-family: Arial, sans-serif;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: clamp(45px, 8vw, 100px);
+  color: rgb(160, 223, 255);
+  text-decoration: underline;
+  text-underline-offset: 12px;
+}
+
+.cohort {
+  padding: 12px 30px;
+  background-color: #111;
+  color: rgb(255, 0, 0);
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  border: 2px solid rgb(255, 0, 0);
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+}
+
+.desc {
+  color: rgb(200, 200, 200);
+  font-size: clamp(18px, 2vw, 24px);
+  font-weight: 500;
+  max-width: 700px;
+  line-height: 1.5;
+}
+
+.projects {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.projects button {
+  font-size: 22px;
+  font-weight: 600;
+  padding: 14px 35px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.projects button:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2);
+}
+
+.task-1 {
+  background: linear-gradient(to right, #ffee03, #ffdd47);
+  color: #202020;
+}
+
+.task-2 {
+  background-color: #8184d2;
+  color: white;
+}
